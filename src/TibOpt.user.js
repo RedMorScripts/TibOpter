@@ -1,5 +1,5 @@
 // ==UserScript==
-    // @name           Tiberium Alliances Combat Optimiser
+    // @name           Combat Optimiser
     // @description    Optimises your layout
     // @namespace      https://prodgame*.alliances.commandandconquer.com/*/index.aspx*
     // @include        https://prodgame*.alliances.commandandconquer.com/*/index.aspx*
