@@ -1,11 +1,10 @@
 // ==UserScript==
-// @name           Tiberium Alliances Combat Simulator
-// @description    Allows you to simulate combat before actually attacking.
+// @name           Combat Simulator
+// @description    Simulate combat 
 // @namespace      https://prodgame*.alliances.commandandconquer.com/*/index.aspx* 
 // @include        https://prodgame*.alliances.commandandconquer.com/*/index.aspx*
-// @version        1.3.2.1
-// @author         WildKatana
-// @require        http://sizzlemctwizzle.com/updater.php?id=130344&days=1
+// @version        1.0.0.0
+// @author         RedMorScripts
 // ==/UserScript==
 (function () {
   var TASuite_mainFunction = function () {
@@ -113,11 +112,11 @@
                 right: 0
               });
               
-              this.buttonTools = new qx.ui.form.Button("Tools");
+              this.buttonTools = new qx.ui.form.Button("RedMor Tool");
               this.buttonTools.set({
                 width: 80,
                 appearance: "button-text-small",
-                toolTipText: "Open Simulator Tools"
+                toolTipText: "Open RedMor Tools"
               });
               this.buttonTools.addListener("click", this.toggleTools, this);
               
@@ -184,7 +183,7 @@
               }, 10000);
               
               // The Battle Simulator box
-              this.battleResultsBox = new qx.ui.window.Window("Battle Simulator");
+              this.battleResultsBox = new qx.ui.window.Window("RedMor Tool");
               this.battleResultsBox.setPadding(1);
               this.battleResultsBox.setLayout(new qx.ui.layout.VBox(1));
               this.battleResultsBox.setShowMaximize(false);
@@ -1015,7 +1014,7 @@
                 layouts[current_city][own_city][lid] = {
                   id: lid,
                   label: title,
-                  layout: this.saved_units,
+                  layout: this.saved_units
                 };
                 this.saveLayouts(layouts);
                 this.updateLayoutsList();
